@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login {
+  background: #eee;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 20px;
+}
+
+.hero p {
+  font-size: 14px;
+}
+
+.cta {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  color: black;
+}
+
+.orange {
+  background: #ff8c42;
+  color: white;
+}
+
+.purple {
+  background: #6c63ff;
+  color: white;
+}
+
+.yellow {
+  background: #ffd54f;
+}
+
+.violet {
+  background: #8e44ad;
+  color: white;
+}
+
+.card h2 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stats */
+.stats h1 {
+  margin-top: 10px;
+  font-size: 28px;
+}
