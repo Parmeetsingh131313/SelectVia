@@ -1,41 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-}
 
-body, html {
+    *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    }
+
+/* body, html {
     width: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .body {
-    width: 100%;
-    min-height: 100vh;
+    margin: 0;
+    /* width: 100%;
+    min-height: 100vh; */
     background: rgba(8, 0, 89, 1);
 }
 .fixUpper {
-    width: 95%;
-    margin: 15px auto;
+    width: 100%;
+    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px;
+    padding: 8px 26px;
     border-radius: 40px;
 
     position: sticky;
-    top: 0; /* important: keep it 0 */
+    top: 15px;
 
     z-index: 9999;
 
     background: rgba(8, 0, 89, 0.95);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 
-    -webkit-backdrop-filter: blur(10px);
 }
 .fixUpperContent {
     display: flex;
@@ -44,13 +45,13 @@ body, html {
 }
 
 .frm37 {
-    height: 100px;
+    height: 80px;
     border-radius: 30px;
 }
 
 .fixUpperContentTextHeading {
     color: white;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .fixUpperContentTextP {
@@ -60,7 +61,7 @@ body, html {
 
 .fixUpperContentTextButton {
     margin-top: 5px;
-    padding: 6px 12px;
+    padding: 2px 12px;
     border-radius: 8px;
 }
 
@@ -76,8 +77,13 @@ body, html {
 }
 
 .frm13, .frm16 {
-    width: 10%;
+    margin-top:30px;
+    width: 8%;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 
@@ -88,7 +94,7 @@ body, html {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 
 
@@ -96,10 +102,10 @@ body, html {
     width: 100%;
     /* max-width: 700px; */
 
-    margin: 20px auto;
+    /* margin: 20px auto; */
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
     gap: 10px;
@@ -111,8 +117,28 @@ body, html {
     flex-wrap: wrap;
 }
 
-.searchimg {
-    width: 100px;
+.searching {
+    /* width: 140px; */
+    transition: 0.3s ;
+    background: white;
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    transition: 0.3s ease;
+
+}
+.searching:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+.filterimg{
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 
@@ -121,17 +147,18 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
 
-    gap: 25px;
-    padding: 20px;
+    gap: 12px;
+    padding: 10px;
 }
 
 
 .shop-mid {
-    width: 90%;
-    max-width: 900px;
-    height: 400px;
+    width: 98%;
+    /* max-width: 900px; */
+    height: 500px;
 
-    margin: 40px auto;
+    margin: 40px 20px;
+    margin-right: 50px;
 
     background-image: url("../assets/shopmid.jpg");
     background-size: cover;
@@ -169,8 +196,15 @@ body, html {
 }
 
 .bottompart {
+    position: fixed;
+    bottom: 15px;   
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
     text-align: center;
-    margin: 40px auto;
+
+    z-index: 9999;
 }
 
 .bottom-card {
@@ -210,47 +244,128 @@ body, html {
 
 @media (max-width: 768px) {
 
-    .fixUpper {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    .body {
+        width: 100%;
+        overflow-x: hidden;
+        padding-top: 120px;
     }
 
-    .fixUpperContent {
-        flex-direction: column;
-    }
+    .fixUpper {
+        position: fixed;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        border-radius: 40px;
+        z-index: 9999;
+        background: rgba(8, 0, 89, 0.95);
+}
+.fixUpperContentTextHeading {
+    color: white;
+    font-size: 14px;
+}
+.fixUpperContentTextP {
+    color: white;
+    font-size: 10px;
+}
+.fixUpperContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 
     .frm37 {
-        height: 80px;
+        height: 60px;
     }
 
     .fixlower {
-        flex-direction: column;
-        align-items: center;
-    }
+    width: 95%;
+    margin: 0 auto 10px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: nowrap;
+    gap: 10px;
+}
 
     .frm13, .frm16 {
-        width: 40%;
+        width: 30%;
+        margin: 0;
     }
 
+.searchmore {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    border-radius: 20px;
+    padding: 8px;
+
+    overflow-x: auto;
+}
+    .searching {
+        font-size: 10px;
+        padding: 8px 12px;
+        margin: 3px;
+    }
+
+    .filterimg {
+        margin: 10px auto 0 auto;
+    }
+
+.shop-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+    .shop-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* MID BANNER */
     .shop-mid {
+        width: 95%;
         height: 250px;
+        margin: 20px auto;
         padding: 15px;
     }
 
     .shop-mid-content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 10px;
     }
 
-    .shop-mid-content-left {
-        text-align: center;
-        font-size: 22px;
+    .shop-mid-btn {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
-    .shop-mid-btn {
-        font-size: 14px;
-        padding: 10px 15px;
+    .bottompart {
+        bottom: 10px;
+        /* transform: translateX(-50%) scale(0.9); */
+    }
+
+    .bottom-card {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .endlogo {
+        width: 30px;
     }
 }

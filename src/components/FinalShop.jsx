@@ -39,8 +39,11 @@ function FinalShop() {
       </div>
       <div className='shop-container'>
         <div className='searchmore'>
-            <img src={search} alt=""  className='searchimg'/>
-            <img src={frame36} alt=""  className='frm36'/>
+            <div  className='searching'>🔍Search</div>
+            <div  className='searching'>Trending</div>
+            <div  className='searching'>Popular</div>
+            <div  className='searching'>Recommended</div>
+            <div  className='searching'>Latest</div>
             <img src={filter} alt="" className='filterimg'/>
         </div>
         <div className='shop-wrapper'>
