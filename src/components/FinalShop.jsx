@@ -3,7 +3,7 @@ import './FinalShop.css'
 import React from 'react'
 import ShopCard from './ShopCard.jsx';
 import endlogo from '../assets/endlogo.png';
-import filter from '../assets/Filter.png';
+import filter from '../assets/filter.png';
 import frame12 from '../assets/Frame12.png';
 import frame13 from '../assets/Frame13.png';
 import frame16 from '../assets/Frame16.png';
@@ -15,7 +15,7 @@ import item3 from '../assets/item3.jpg';
 import item4 from '../assets/item4.jpg';
 import item5 from '../assets/item5.jpg';
 import item6 from '../assets/item6.jpg';
-import search from '../assets/Search.png';
+import search from '../assets/search.png';
 
 function FinalShop() {
   return (
