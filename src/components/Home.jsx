@@ -1,13 +1,13 @@
 import './Home.css'
 
 import React from 'react'
-import frame12 from "../assets/Frame12.png";
 import frame43 from "../assets/Frame43.png";
 import frame52 from "../assets/Frame52.png";
 import group49 from "../assets/Group49.png";
 import group50 from "../assets/Group50.png";
 import group51 from "../assets/Group51.png";
 import myImage from "../assets/selectvia.png";
+import share from "../assets/share.png";
 
 function Home() {
   return (
@@ -48,7 +48,7 @@ function Home() {
         <div className='z-container-h'>
             <div className='z-container-h-span'><span>Your <br />Brand</span></div>
             <div>
-                <img src={frame12} alt="" />
+                <img src={share} alt=""  className='frm12'/>
             </div>
         </div>
         <img src={group51} alt=""  className='z-container-img'/>

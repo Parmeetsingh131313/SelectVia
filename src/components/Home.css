@@ -11,11 +11,9 @@ body {
 
 }
 
-/* =========================
-   MAIN SECTION ONE
-========================= */
 .container-one {
     width: 100%;
+    height: 100rem;
     background: rgba(0, 123, 255, 1);
 
     display: flex;
@@ -29,7 +27,6 @@ body {
     height: 1100px;
 }
 
-/* TOP BAR */
 .one-link {
     width: 90%;
     border-radius: 28px;
@@ -57,7 +54,6 @@ body {
     text-decoration: none;
 }
 
-/* SIGN IN */
 .sign-in {
     width: 90%;
     display: flex;
@@ -100,7 +96,6 @@ body {
     color: rgba(18, 18, 18, 1);
 }
 
-/* MENU ICON */
 .three- {
     display: flex;
     justify-content: center;
@@ -112,9 +107,6 @@ body {
     height: 1.5rem;
 }
 
-/* =========================
-   HEADING
-========================= */
 .heading {
     margin-top: 80px;
     text-align: center;
@@ -135,7 +127,6 @@ body {
     color: white;
 }
 
-/* VIDEO BUTTON */
 .vid-link {
     width: 240px;
     height: 80px;
@@ -158,14 +149,11 @@ body {
     background-position: center;
 }
 
-/* =========================
-   Z CONTAINER (FIXED FLOW)
-========================= */
 .z-container {
     width: 66%;
     min-height: 540px;
 
-    margin: -120px auto 0 auto;  /* ⭐ OVERLAP + CENTER */
+    margin: -120px auto 0 auto;
 
     position: relative;
     z-index: 10;
@@ -188,7 +176,7 @@ body {
     height: 84px;
 
     border-radius: 34px;
-    padding: 15px 15px 15px 28px;
+    padding: 30px 15px 25px 28px;
 
     background: white;
 
@@ -221,7 +209,6 @@ body {
     margin: 20px;
 }
 
-/* BUTTONS */
 .z-container-com,
 .z-container-com-a {
     width: 80%;
@@ -252,9 +239,6 @@ body {
     color: white;
 }
 
-/* =========================
-   CONTAINER TWO (FIXED FLOW)
-========================= */
 .container-two {
     width: 100%;
     background: rgba(53, 50, 198, 1);
@@ -262,16 +246,15 @@ body {
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
 
-    margin-top: -250px;   /* ⭐ pulls it UP into z-container */
+    margin-top: -250px;
 
-    padding-top: 300px;   /* keeps content below overlap */
+    padding-top: 300px;
     padding-bottom: 150px;
 
     position: relative;
     z-index: 5;
 }
 
-/* TEXT */
 .container-two-content-h1 {
     font-family: Figtree;
     font-weight: 800;
@@ -289,7 +272,6 @@ body {
     padding-top: 20px;
 }
 
-/* IMAGE CENTER */
 .container-two-content-img {
     display: flex;
     justify-content: center;
@@ -310,12 +292,11 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;     /* ⭐ centers everything horizontally */
-    justify-content: center; /* optional vertical alignment */
-    text-align: center;      /* ensures text centering */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-/* CONTENT BOX */
 .container-three-content {
     width: 100%;
     max-width: 500px;
@@ -326,14 +307,9 @@ body {
     gap: 8px;
     margin-bottom: 20px;
 }
-
-/* ❗ FIXED (you missed the dot before class name) */
 .container-three-content-h1 {
     font-family: Figtree;
-    /* font-weight: 300; */
     font-size: 65px;
-    /* line-height: 24px; */
-
     text-align: center;
     color: rgba(18, 18, 18, 1);
 }
@@ -342,18 +318,16 @@ body {
     font-family: Figtree;
     font-weight: 300;
     font-size: 28px;
-    /* line-height: 24px; */
 
     text-align: center;
     color: rgba(18, 18, 18, 1);
 }
 
-/* BUTTON */
 .container-three-p1 {
     font-family: Figtree;
     font-weight: 600;
     font-size: 28px;
-    display: inline-flex;   /* ⭐ makes centering perfect */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
@@ -396,9 +370,9 @@ body {
     padding: 150px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;     /* ⭐ centers everything horizontally */
-    justify-content: center; /* optional vertical alignment */
-    text-align: center;   
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
 }
 .container-four-content-h1{
     font-family: Figtree;

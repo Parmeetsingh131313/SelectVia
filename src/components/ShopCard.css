@@ -1,0 +1,63 @@
+.shop-card {
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
+    overflow: hidden;
+    flex: 1 1 300px; /* grow, shrink, base width */
+    max-width: 350px;
+
+}
+
+/* hover effect */
+.shop-card:hover {
+    transform: translateY(-5px);
+}
+
+/* image */
+.shop-img {
+    width: 300px;
+    height: 200px;
+    opacity: 1;
+    border-radius: 22px;
+    object-fit: cover;
+}
+.af2more{
+    text-align: left;
+    display: block;
+    width: 87;
+height: 19;
+
+angle: 0 deg;
+opacity: 1;
+
+}
+/* product name */
+.shop-name {
+    margin: 10px 0;
+    font-size: 26px;
+}
+.product-desc{
+    font-size: 16px;
+    color: rgba(18, 18, 18, 1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* button */
+.buy-btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
