@@ -20,7 +20,7 @@
 
 /* image */
 .shop-img {
-    width: 300px;
+    width: 270px;
     height: 200px;
     opacity: 1;
     border-radius: 22px;
@@ -60,4 +60,18 @@ opacity: 1;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+@media (max-width: 768px) {
+    .shop-img {
+        width: 90%;
+        max-width: 270px;
+
+        height: auto;
+
+        border-radius: 22px;
+        object-fit: cover;
+
+        display: block;
+        margin: auto;
+    }
 }

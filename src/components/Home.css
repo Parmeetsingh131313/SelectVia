@@ -2,33 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     overflow-x: hidden;
-        background: rgba(0, 123, 255, 1);
-
+    background: rgba(0, 123, 255, 1);
+    font-family: "Figtree", sans-serif;
 }
 
 .container-one {
     width: 100%;
-    height: 100rem;
-    background: rgba(0, 123, 255, 1);
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 20px;
-
     padding: 20px;
-    padding-bottom: 60px;
-    height: 1100px;
 }
 
 .one-link {
-    width: 90%;
+    width: 95%;
+    max-width: 1200px;
+
     border-radius: 28px;
     padding: 15px 18px;
 
@@ -37,28 +34,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .one-link-content1-p1 {
     color: rgba(255, 85, 0, 1);
-    font-family: LT Superior Serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
 .one-link-content2-a {
-    font-family: Figtree;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: rgba(255, 85, 0, 1);
     text-decoration: none;
 }
-
 .sign-in {
-    width: 90%;
+    width: 95%;
+    max-width: 1200px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     border-radius: 100px;
     padding: 15px 23px;
@@ -67,8 +65,8 @@ body {
 }
 
 .logoimage {
-    width: 13rem;
-    height: 3rem;
+    width: 180px;
+    max-width: 100%;
 }
 
 .sign-in-box {
@@ -82,7 +80,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 18px;
+    padding: 12px 18px;
     border-radius: 64px;
 
     background: white;
@@ -90,46 +88,38 @@ body {
 
 .signin-a {
     text-decoration: none;
-    font-family: Figtree;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: rgba(18, 18, 18, 1);
 }
 
-.three- {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .three-img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 20px;
+    height: 20px;
 }
 
 .heading {
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .heading-h {
-    font-family: Figtree;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: clamp(2rem, 6vw, 5rem);
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .heading-p {
-    font-family: Figtree;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     color: white;
 }
 
 .vid-link {
-    width: 240px;
-    height: 80px;
+    width: clamp(160px, 30vw, 220px);
+    height: clamp(50px, 10vw, 70px);
 
     display: flex;
     justify-content: center;
@@ -150,10 +140,12 @@ body {
 }
 
 .z-container {
-    width: 66%;
-    min-height: 540px;
+    width: 90%;
+    max-width: 900px;
 
-    margin: -120px auto 0 auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 
     position: relative;
     z-index: 10;
@@ -162,262 +154,228 @@ body {
     border-radius: 46px;
 
     background: rgba(255, 85, 0, 1);
-
-    border: 2px solid transparent;
-    border-image: linear-gradient(
-        180deg,
-        rgba(255, 140, 66, 0.3),
-        rgba(255, 208, 178, 0.3)
-    ) 1;
 }
 
 .z-container-h {
     width: 100%;
-    height: 84px;
-
-    border-radius: 34px;
-    padding: 30px 15px 25px 28px;
-
-    background: white;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .z-container-h-span {
-    font-family: Figtree;
+    font-size: clamp(16px, 3vw, 26px);
     font-weight: 800;
-    font-size: 26px;
-    color: rgba(18, 18, 18, 1);
 }
 
 .z-container-img {
-    width: 400px;
-    max-width: 90%;
-    height: auto;
-    display: block;
+    width: 100%;
+    max-width: 400px;
     margin: 20px auto;
+    display: block;
 }
 
 .z-container-heading {
-    font-family: Figtree;
-    font-weight: 800;
-    font-size: 36px;
+    font-size: clamp(20px, 4vw, 36px);
     text-align: center;
     color: white;
-    margin: 20px;
 }
 
 .z-container-com,
 .z-container-com-a {
-    width: 80%;
+    width: 90%;
     max-width: 400px;
 
     height: 55px;
 
     border-radius: 18px;
-    padding: 10px 16px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     margin: 10px auto;
 }
 
 .z-container-com {
-    justify-content: flex-start;
     background: white;
-    font-size: 22px;
 }
 
 .z-container-com-a {
-    justify-content: center;
-    text-decoration: none;
     background: rgba(18, 18, 18, 1);
-    font-size: 22px;
     color: white;
+    text-decoration: none;
 }
+
 
 .container-two {
     width: 100%;
+    min-height: 100vh;
+
     background: rgba(53, 50, 198, 1);
 
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
 
-    margin-top: -250px;
+    margin-top: -150px;
 
-    padding-top: 300px;
-    padding-bottom: 150px;
-
-    position: relative;
-    z-index: 5;
+    padding: 200px 20px 100px 20px;
 }
 
 .container-two-content-h1 {
-    font-family: Figtree;
-    font-weight: 800;
-    font-size: 65px;
+    font-size: clamp(28px, 5vw, 65px);
     text-align: center;
     color: white;
 }
 
 .container-two-content-p {
-    font-family: Figtree;
-    font-weight: 300;
-    font-size: 28px;
+    font-size: clamp(14px, 2vw, 28px);
     text-align: center;
     color: white;
-    padding-top: 20px;
 }
 
 .container-two-content-img {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .container-two-img {
-    width: 470px;
-    max-width: 90%;
-    height: auto;
+    width: 90%;
+    max-width: 470px;
 }
+
+
 .container-three {
     background: rgba(255, 193, 7, 1);
 
-    padding: 150px 20px;
+    min-height: 100vh;
+
+    padding: 100px 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-.container-three-content {
-    width: 100%;
-    max-width: 500px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
-}
 .container-three-content-h1 {
-    font-family: Figtree;
-    font-size: 65px;
-    text-align: center;
-    color: rgba(18, 18, 18, 1);
+    font-size: clamp(28px, 5vw, 65px);
 }
 
 .container-three-content-p {
-    font-family: Figtree;
-    font-weight: 300;
-    font-size: 28px;
-
-    text-align: center;
-    color: rgba(18, 18, 18, 1);
+    font-size: clamp(14px, 2vw, 28px);
 }
 
 .container-three-p1 {
-    font-family: Figtree;
-    font-weight: 600;
-    font-size: 28px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 4px 14px;
-
+    padding: 6px 14px;
     border-radius: 28px;
-
-    background: rgba(255, 255, 255, 1);
-    color: rgba(18, 18, 18, 1);
-
-    margin-top: 20px;
-}
-.container-three-img{
-    margin-top: 50px;
-    width: auto;
-    height: 250px;
-    top: 2276px;
-    left: -43px;
-    angle: 0 deg;
-    opacity: 1;
-
+    background: white;
+    margin-top: 15px;
 }
 
-.container-three-claim{
-    width: 100%;
-    min-width: 400px;
-    height: 55px;
+.container-three-img {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.container-three-claim {
+    width: clamp(280px, 20vw, 500px);
+    height: 60px;
     border-radius: 18px;
-    /* padding: 15px 23px; */
-    font-size: 22px;
     background: rgba(17, 17, 17, 1);
-    display: flex;
+    color: white;
+    font-size: 16px;
+    /*font-weight: 600;
+    */display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    color: white;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
 }
-.container-four{
+
+
+.container-four {
     background: rgba(141, 62, 255, 1);
-    padding: 150px 20px;
+
+    min-height: 100vh;
+
+    padding: 100px 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;  
-}
-.container-four-content-h1{
-    font-family: Figtree;
-    font-weight: 800;
-    font-style: ExtraBold;
-    font-size: 65px;
-    margin-bottom: 20px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
 }
-.container-four-content-p{
-    font-family: Figtree;
-    font-weight: 300;
-    font-style: Light;
-    font-size: 28px;
-    margin-bottom: 30px;
-    leading-trim: NONE;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
+
+.container-four-content-h1 {
+    font-size: clamp(28px, 5vw, 65px);
+    color: white;
 }
-.container-four-img{
-    /* margin-top: 50px; */
-    width: auto;
-    height: 535px;
-    top: 2276px;
-    left: -43px;
-    angle: 0 deg;
-    opacity: 1;
+
+.container-four-content-p {
+    font-size: clamp(14px, 2vw, 28px);
+    color: white;
 }
-.container-four-claim{
-    width: 100%;
-    min-width: 400px;
-    height: 55px;
+
+.container-four-img {
+    width: 90%;
+    max-width: 500px;
+}
+
+.container-four-claim {
+    width: clamp(280px, 20vw, 500px);
+
+    height: 60px;
+
     border-radius: 18px;
-    /* padding: 15px 23px; */
-    font-size: 22px;
+
     background: rgba(17, 17, 17, 1);
+    color: white;
+
+    font-size: 16px;
+    /* font-weight: 600; */
+
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    color: white;
+
+    margin-top: 50px;
+
+    cursor: pointer;
+    border: none;
+
+}
+
+@media (max-width: 768px) {
+
+    .one-link,
+    .sign-in {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .sign-in-box {
+        justify-content: center;
+    }
+
+    .heading {
+        margin-top: 40px;
+    }
+
+    .z-container {
+        margin-top: 50px;
+    }
 }
