@@ -1,5 +1,5 @@
 .shop-card {
-    width: 49%;
+    width: 100%;
     margin: 0;
     flex: 0 0 auto;
 
@@ -11,6 +11,10 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: 0.2s ease;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .shop-name, .product-desc{
@@ -28,26 +32,63 @@
     border-radius: 22px;
     object-fit: cover;
 }
-.af2more{
-    text-align: left;
-    display: block;
-    width: 100px;
-height: 25px;
+.af2more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 6px 14px;
+    border-radius: 50px;
 
-angle: 0 deg;
-opacity: 1;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
+    width: fit-content;
+}
+
+.icon-stack {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 28px;
+    background: white;
+    border-radius: 50%;
+}
+
+.amazon {
+    z-index: 3;
+    color: rgba(255, 153, 0, 0.893);
+}
+
+.flipkart {
+    margin-left: -10px;
+    z-index: 2;
+    color: rgba(13, 97, 231, 0.897);
+}
+
+.etsy {
+    margin-left: -10px;
+    z-index: 1;
+    color: rgba(243, 88, 37, 0.916);
+}
+
+.more-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
 }
 .shop-name {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     font-size: 26px;
     /* margin-right: auto; */
 }
 .product-desc{
     font-size: 16px;
     color: rgba(18, 18, 18, 1);
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 25px;
     /* margin-right: auto; */
 }
 .buy-btn {
@@ -59,57 +100,66 @@ opacity: 1;
     color: white;
     border-radius: 16px;
     cursor: pointer;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    margin-top: auto;
 }
 @media (max-width: 768px) {
-    .shop-img {
-        width: 90%;
-        max-width: 270px;
-
-        height: 100px;
-
-        border-radius: 22px;
-        object-fit: cover;
-
-        display: block;
-        margin: auto;
+    .card-content {
+        display: flex;
+        flex-direction: column;
     }
     .shop-card {
-    flex: 0 0 48%;
-    max-width: 48%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .shop-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .af2more {
+        padding: 3px 4px;
+        gap: 6px;
+        margin-top: 10px;
+        border-radius: 40px;
+    }
 
-}
-.af2more {
-    text-align: left;
-    display: block;
-    width: 60px;
-    height: 17px;
-    angle: 0 deg;
-    opacity: 1;
-}
-.shop-name {
-    margin: 10px 0;
-    font-size: 16px;
-}
-.product-desc {
-    font-size: 12px;
-    color: rgba(18, 18, 18, 1);
-}
-.buy-btn {
-    width: 70%;
-    font-size: 10px;
-    padding: 12px;
-    border: none;
-    background: black;
-    color: white;
-    border-radius: 16px;
-    cursor: pointer;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-}
+    .icon {
+        font-size: 14px;
+    }
+
+    .flipkart, .etsy {
+        margin-left: -8px;
+    }
+
+    .more-text {
+        font-size: 8px;
+    }
+
+    .shop-name {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .product-desc {
+        font-size: 12px;
+        color: rgba(18, 18, 18, 1);
+    }
+    .buy-btn {
+        font-size: 12px;
+        padding: 10px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: auto;
+        flex-shrink: 0;
+    }
 }

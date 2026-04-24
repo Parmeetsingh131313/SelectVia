@@ -5,12 +5,6 @@
     box-sizing: border-box; 
     }
 
-/* body, html {
-    width: 100%;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
 
 .body {
     margin: 0;
@@ -68,7 +62,7 @@
 
 .fixlower {
     width: 95%;
-    margin: 20px auto;
+    margin: 50px auto 20px auto;
 
     display: flex;
     justify-content: space-between;
@@ -76,16 +70,102 @@
     gap: 10px;
 }
 
-.frm13, .frm16 {
-    margin-top:30px;
-    width: 8%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    border: 2px solid white;
+    border-radius: 26px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.shareIcon{
+    font-size: 26px;
 }
 
+.visit-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    gap: 10px;
+    padding: 10px 16px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.visit-store-amazon-icon {
+    font-size: 36px;
+    color: #FF9900;
+}
+
+.visit-store span {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.visit-store-next-icon {
+    font-size: 30px;
+}
+
+.follow-on {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid white;
+    background: white;
+    border-radius: 50px;
+    padding: 10px 16px;
+    color: black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.follow-on span {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.follow-on a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    /*color: black;
+    */text-decoration: none;
+    transition: 0.3s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.follow-on a svg {
+    font-size: 26px;
+}
+
+.follow-on-insta{
+    color: #E4405F;
+}
+
+.follow-on-x{
+    background: black;
+    color: white;
+}
+
+.follow-on-fb{
+    color: #1877F2;
+}
 
 .shop-container {
     width: 100%;
@@ -122,6 +202,7 @@
     transition: 0.3s ;
     background: white;
     padding: 12px 20px;
+    border: none;
     font-size: 20px;
     margin: 5px;
     border-radius: 30px;
@@ -132,23 +213,42 @@
     transition: 0.3s ease;
 
 }
+.searching svg{
+    font-size: 22px;
+    margin-right: 10px;
+}
 .searching:hover {
     transform: scale(1.05);
     background-color: #f0f0f0;
 }
-.filterimg{
+
+.filter-icon{
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    border: none;
+    background: white;
+    border-radius: 30px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ;
+}
+.filter-icon:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
 }
 
+.filter-icon svg{
+    font-size: 26px;
+}
 
 .shop-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -225,7 +325,7 @@
 }
 
 .endlogo {
-    width: 40px;
+    width: 30px;
 }
 
 .sibtext {
@@ -295,10 +395,105 @@
     gap: 10px;
 }
 
-    .frm13, .frm16 {
-        width: 30%;
-        margin: 0;
-    }
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 8px;
+    border: 2px solid white;
+    border-radius: 18px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.shareIcon{
+    font-size: 18px;
+}
+
+.visit-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px 6px;
+    background: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.visit-store-amazon-icon {
+    font-size: 24px;
+    color: #FF9900;
+}
+
+.visit-store span {
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.visit-store-next-icon {
+    font-size: 20px;
+}
+
+.follow-on {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 2px 6px;
+    background: white;
+    color: black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.follow-on span {
+    margin-right: 4px;
+    font-size: 10px;
+}
+
+.follow-on a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    /* color: white; */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.follow-on a svg {
+    font-size: 18px;
+}
+
+.follow-on-insta{
+    color: #E4405F;
+}
+
+.follow-on-x{
+    background: black;
+    color: white;
+}
+
+.follow-on-fb{
+    color: #1877F2;
+}
 
 .searchmore {
     display: flex;
@@ -311,22 +506,41 @@
 
     overflow-x: auto;
 }
-    .searching {
-        font-size: 10px;
-        padding: 8px 12px;
-        margin: 3px;
-    }
+.searching {
+    font-size: 10px;
+    padding: 8px 12px;
+    margin: 3px;
+    border: none;
+}
 
-    .filterimg {
-        margin: 10px auto 0 auto;
-    }
+.searching svg{
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.filter-icon{
+    margin-left: 8px;
+    text-align: center;
+    /* margin-right: 10px; */
+    border: none;
+    background: white;
+    border-radius: 30px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-icon svg{
+    font-size: 12px;
+}
 
 .shop-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
     padding: 10px;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 
@@ -335,7 +549,6 @@
         height: auto;
     }
 
-    /* MID BANNER */
     .shop-mid {
         width: 95%;
         height: 250px;
@@ -366,6 +579,6 @@
     }
 
     .endlogo {
-        width: 30px;
+        width: 20px;
     }
 }

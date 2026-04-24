@@ -1,5 +1,13 @@
 import './FinalShop.css'
 
+import { AiFillAmazonCircle } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { HiAdjustmentsHorizontal } from "react-icons/hi2";
+import { IoIosSearch } from "react-icons/io";
+import { IoShareSocial } from "react-icons/io5";
+import { MdNavigateNext } from "react-icons/md";
 import React from 'react'
 import ShopCard from './ShopCard.jsx';
 import endlogo from '../assets/endlogo.png';
@@ -31,20 +39,33 @@ function FinalShop() {
                 <button className='fixUpperContentTextButton'>thelensbrand.com ↗</button>
             </div>
         </div>
-            <img src={frame12} alt=""  className='frm12'/>
+            <button className='share-btn'> 
+                <IoShareSocial  className='shareIcon'/>
+            </button>
       </div>
       <div className='fixlower'>
-        <img src={frame13} alt=""  className='frm13'/>
-        <img src={frame16} alt="" className='frm16'/>
+        {/* <img src={frame13} alt=""  className='frm13'/> */}
+        <button className='visit-store'>
+            <AiFillAmazonCircle  className='visit-store-amazon-icon'/>
+            <span>visit <br />store</span>
+            <MdNavigateNext className='visit-store-next-icon'/>
+        </button>
+        {/* <img src={frame16} alt="" className='frm16'/> */}
+        <div className='follow-on'>
+            <span>Follow us</span>
+            <a href="#insta" className='follow-on-insta'><FaInstagram /></a>
+            <a href="#x" className='follow-on-x'><FaXTwitter /></a>
+            <a href="#facebook" className='follow-on-fb'><FaFacebook /></a>
+        </div>
       </div>
       <div className='shop-container'>
         <div className='searchmore'>
-            <div  className='searching'>🔍Search</div>
-            <div  className='searching'>Trending</div>
-            <div  className='searching'>Popular</div>
-            <div  className='searching'>Recommended</div>
-            <div  className='searching'>Latest</div>
-            <img src={filter} alt="" className='filterimg'/>
+            <button  className='searching'><IoIosSearch /> Search</button>
+            <button  className='searching'>Trending</button>
+            <button  className='searching'>Popular</button>
+            <button  className='searching'>Recommended</button>
+            <button  className='searching'>Latest</button>
+            <button className='filter-icon'><HiAdjustmentsHorizontal /></button>
         </div>
         <div className='shop-wrapper'>
             
